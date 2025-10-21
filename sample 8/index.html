@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>JavaScript Random Numbers and Date</title>
+</head>
+<body>
+
+    <h1>Generated Output</h1>
+    <p>Open your browser's developer console (F12) to see the output.</p>
+
+    <script>
+        // Function to generate a random integer within a specified range
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Print the first random set of numbers
+        console.log("--- First Random Set ---");
+        for (let i = 0; i < 5; i++) {
+            console.log(getRandomInt(1, 100));
+        }
+
+        // Print the current date
+        const currentDate = new Date();
+        console.log("\n--- Current Date ---");
+        console.log(currentDate);
+
+        // Print the second random set of numbers
+        console.log("\n--- Second Random Set ---");
+        for (let i = 0; i < 5; i++) {
+            console.log(getRandomInt(1, 100));
+        }
+    </script>
+
+</body>
+</html>

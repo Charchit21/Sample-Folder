@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <input type ="number" id="mynum">
+        <button onclick="myfunction()">Click me </button>
+        <p id="number"></p>
+        <script>
+        
+    let n = 1 ;
+    
+    function myfunction() {
+        // Get the value from the input field
+        let userInput = document.getElementById("mynum").value;
+        // Convert it to a number (optional, if you want a number)
+        let number = Number(userInput);
+        // Use the number in your code (for example, display it)
+        
+        document.getElementById("number").innerHTML = "You entered: " + number;
+    }
+
+        </script>
+    </body>
+</html>

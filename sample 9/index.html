@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p> random number</p>
+        <script>
+            import java.time.LocalDate; // Import for current date
+            import java.util.Random;   // Import for random number generation
+
+            public class RandomNumbersAndDate {
+
+            public static void main(String[] args) {
+            Random random = new Random(); // Create a Random object
+        int count = 5; // Define the number of random numbers to generate in each set
+
+        System.out.println("First set of random numbers:");
+        for (int i = 0; i < count; i++) {
+            System.out.println(random.nextInt(100)); // Generates a random integer between 0 (inclusive) and 99 (inclusive)
+        }
+
+        System.out.println("\nCurrent Date:");
+        LocalDate currentDate = LocalDate.now(); // Get the current date
+        System.out.println(currentDate);
+
+        System.out.println("\nSecond set of random numbers:");
+        for (int i = 0; i < count; i++) {
+            System.out.println(random.nextInt(100));
+        }
+    }
+}
+        </script>
+    </body>
+</html>
