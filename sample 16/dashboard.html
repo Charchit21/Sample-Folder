@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bank | Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container dashboard-container">
+    <h1>Welcome, <span id="user-name"></span> 👋</h1>
+    <div class="balance">
+      <h2>Your Balance</h2>
+      <h1 id="balance">$0.00</h1>
+    </div>
+
+    <div class="inc-exp-container">
+      <div class="income">
+        <h3>Income</h3>
+        <p id="money-plus">+$0.00</p>
+      </div>
+      <div class="expense">
+        <h3>Expense</h3>
+        <p id="money-minus">-$0.00</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a href="tracker.html" class="btn">Go to Tracker</a>
+      <button id="logout-btn" class="btn logout">Logout</button>
+    </div>
+  </div>
+
+  <footer>© 2025 My Bank</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
